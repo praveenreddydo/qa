@@ -1,36 +1,23 @@
-# Trupeer QA Automation Assignment
+# Part 1 — Exploratory Testing
 
-An interview-ready Python QA automation project for the Trupeer QA Engineer assignment. It combines exploratory testing, maintainable browser automation, and LLM-augmented validation.
+## Recording
 
-## Project map
+Replace this line with a shareable screen-recording URL after the exploratory session:
 
-| Folder | Deliverable |
-| --- | --- |
-| `part1/` | Exploratory-testing notes, recording link, and bug report |
-| `part2/` | Python pytest-playwright end-to-end suite using Page Objects |
-| `part3/` | LLM-judged validation of AI script modifications |
-| `docs/` | PyCharm setup and interview walkthrough |
+`REPLACE_WITH_RECORDING_URL`
 
-## Quick start
+## Session details
 
-1. Install Python 3.10 or newer.
-2. Copy `.env.example` to `.env` and fill in the Trupeer credentials, the video edit URL, and the LLM key.
-3. Install the Python dependencies and Chromium browser:
+- Browser: `REPLACE_WITH_BROWSER_AND_VERSION`
+- OS: `REPLACE_WITH_OS_AND_VERSION`
+- Date tested: `REPLACE_WITH_DATE`
+- Test account: free Trupeer account created for this assignment
 
-    ```bash
-    python -m pip install -r requirements.txt
-    python -m playwright install chromium
-    ```
+The recording should show sign-up, a short microphone-enabled recording, and exploration of the editor. The microphone is required because Parts 2 and 3 use the generated script.
 
-4. Run the E2E suite:
+## Bugs Found
 
-    ```bash
-    pytest part2
-    ```
-
-5. Run the AI-augmented validator:
-
-    ```bash
-    python -m part3.validate
-    ```
+| ID | Title | Severity | Status |
+| --- | --- | --- | --- |
+| BUG-001 | Microphone permission not requested when creating a new video | High | Confirmed |
 
