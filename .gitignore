@@ -1,0 +1,12 @@
+playwright-report/
+test-results/
+blob-report/
+.env
+.auth/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+*.iml
+part3/results/*.json
+*.log
