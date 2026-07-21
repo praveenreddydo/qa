@@ -1,0 +1,12 @@
+[project]
+name = "trupeer-qa-automation-assignment"
+version = "1.0.0"
+description = "Python pytest-playwright and LLM-augmented QA automation for the Trupeer QA Engineer assignment."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+addopts = "--browser chromium --tracing retain-on-failure --screenshot only-on-failure --video retain-on-failure"
+testpaths = ["part2/tests"]
+markers = [
+  "e2e: live end-to-end test against Trupeer"
+]
